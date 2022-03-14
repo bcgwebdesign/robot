@@ -37,12 +37,21 @@ def index():
 	global base,shoulder,elbow,wrist,grip_rotation,gripper
 	
 	if request.method == 'POST':
-		new_base = int(request.form['base'])
-		new_shoulder = int(request.form['shoulder'])
-		new_elbow = int(request.form['elbow'])
-		new_wrist = int(request.form['wrist'])
-		new_grip_rotation = int(request.form['grip_rotation'])
-		new_gripper = int(request.form['gripper'])
+		if request.form['submit_button'] == 'Default Positions':
+			new_base = 90
+			new_shoulder = 180
+			new_elbow = 90
+			new_wrist = 90
+			new_grip_rotation = 20
+			new_gripper = 50
+		else:
+			new_base = int(request.form['base'])
+			new_shoulder = int(request.form['shoulder'])
+			new_elbow = int(request.form['elbow'])
+			new_wrist = int(request.form['wrist'])
+			new_grip_rotation = int(request.form['grip_rotation'])
+			new_gripper = int(request.form['gripper'])
+
 		target_array = [
 			[base_servo, base, new_base],
 			[shoulder_servo, shoulder,new_shoulder],
