@@ -16,3 +16,11 @@ All in python
 - multithreading to allow all servos to move in parallel
 - and my own experiments to try to get all servo moves to start and finish at the same time
 
+## TODO
+- Organise code structure properly in line with Flask setup
+- Better ajax(?) communication with the flask server
+- graphical sliders for position
+- limits on inputs!!!
+- graphic of arm position??
+- Inverse kinematics? ie just say where you want the gripper to be and the rest is worked out?
+
