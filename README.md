@@ -5,8 +5,9 @@
 - [Pi Zero (1st gen)](https://www.raspberrypi.com/products/raspberry-pi-zero-w/)
 - [Servo Hat](https://www.amazon.co.uk/Waveshare-16-Channel-Servo-Driver-HAT/dp/B07GYFTKZD/ref=sr_1_3?keywords=adafruit+servo+hat&qid=1647255859&sprefix=adafruit+servo%2Caps%2C75&sr=8-3)
 - Various connectors servo cable extenders
-- PSU for the Hat
-- Upgrade should and elbow servo to 25kg/cm servos
+- [PSU for the Hat](https://www.amazon.co.uk/Adapter-Display-Adjustable-Voltage-Universal/dp/B09DKXZLC5/ref=sr_1_3?keywords=3v+to+24v+power+supply&qid=1647256284&sprefix=power+adaptor+3v+to+24v%2Caps%2C150&sr=8-3)
+- [Upgrade shoulder and elbow servo to 25kg/cm servos](https://www.amazon.co.uk/gp/product/B099PSWMJP/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
+- Metal horns(?) for the servos
 
 ## The code (outline for now)
 All in python
