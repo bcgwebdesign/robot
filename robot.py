@@ -7,10 +7,10 @@ from adafruit_servokit import ServoKit
 
 DEBUG = False
 SYNC_MOVES = True #ie synced moves take the same time
-EASING = False
+EASING = True
 
 servo_count = 6
-servo_speed = 1.0 # ie 1s to go 0 to 180 degrees
+servo_speed = 3.0 # ie 1s to go 0 to 180 degrees
 servo_step = 1
 servo_range = 180
 
@@ -18,8 +18,8 @@ base = 90
 shoulder = 180
 elbow = 90
 wrist = 90
-grip_rotation = 20
-gripper = 50
+grip_rotation = 180
+gripper = 90
 
 base_servo = 0
 shoulder_servo = 1
@@ -42,8 +42,27 @@ def index():
 			new_shoulder = 180
 			new_elbow = 90
 			new_wrist = 90
-			new_grip_rotation = 20
-			new_gripper = 50
+			new_grip_rotation = 180
+			new_gripper = 90
+			base = new_base - 5
+			shoulder = new_shoulder - 5
+			elbow = new_elbow - 5
+			wrist = new_wrist -5
+			grip_rotation = new_grip_rotation - 5
+			gripper = new_gripper - 5
+		elif request.form['submit_button'] == 'Posed':
+			new_base = 90
+			new_shoulder = 90
+			new_elbow = 180
+			new_wrist = 20
+			new_grip_rotation = 90
+			new_gripper = 90
+			base = new_base - 5
+			shoulder = new_shoulder - 5
+			elbow = new_elbow - 5
+			wrist = new_wrist -5
+			grip_rotation = new_grip_rotation - 5
+			gripper = new_gripper - 5
 		else:
 			new_base = int(request.form['base'])
 			new_shoulder = int(request.form['shoulder'])
