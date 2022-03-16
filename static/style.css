@@ -1,0 +1,18 @@
+#slider .rs-range-color  {
+    background-color: #ff8d00;
+}
+#slider .rs-handle:after  {
+    background-color: #000000;
+}
+#slider .rs-border  {
+    border-color: #ff8d00;
+}
+.container {
+	display: flex;
+	flex-direction:row;
+	width:100%;
+	justify-content:space-evenly;
+}
+.container > div {
+	border:1px solid grey;
+}

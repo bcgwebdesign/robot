@@ -97,18 +97,6 @@ def index():
 		gripper = gripper
 		)
 
-@app.route('/hello', methods=['POST', 'GET'])
-def hello_world():
-	targets_first = [[0,45,135]]
-	targets_second = [[0,135,45]]
-	moveto(targets_first)
-	moveto(targets_second)
-	return "<p>Hello, World</p>"
-
-@app.route('/inputs', methods=['POST', 'GET'])
-def input_testing():
-	servo = request.form['servo']
-	return  servo + " was selected"
 
 
 version = '1.0'
